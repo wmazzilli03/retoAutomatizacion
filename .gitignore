@@ -1,0 +1,25 @@
+node_modules/
+
+# Playwright outputs
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Cucumber JSON y HTML reports
+/reports/cucumber-report.json
+/reports/cucumber-report.html
+
+# Allure (si llegas a usarlo)
+allure-results/
+allure-report/
+
+# Archivos temporales y de sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
