@@ -8,12 +8,14 @@ module.exports ={
         format: [
             "progress-bar",
             "summary",
-            "json:reports/cucumber-report.json", // Generates a JSON report
-            "html:reports/cucumber-report.html"
+            "json:reports/cucumber-report.json", 
+            "html:reports/cucumber-report.html",
+            'allure-cucumberjs/reporter' 
         ],
         formatOptions: {
             colorsEnabled: true,
-            snippetInterface: "async-await"
+            snippetInterface: "async-await",
+            resultsDir: 'allure-results'
         },
         require: [
             "coordinadora/step-definitions/*.ts" 

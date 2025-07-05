@@ -22,7 +22,7 @@ Given('ingresa {int} como valor a recaudar', async function (valor: number ) {
     postGuia.setValorRecaudar(valor);
 });
 
-
+ 
 When('hace clic en Crear guía', async function () {
     await postGuia.postCrearGuia();
 });
