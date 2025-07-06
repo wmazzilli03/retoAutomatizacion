@@ -1,5 +1,7 @@
 # retoAutomatizacion
 # Reto de automatizacion utilizando Playrwight con ts + cucumber
+# todo el proyecto quedo dentro de la carpeta coordinadora
+# 
 
 # antes de ejecutar la prueba debes en cmd ejecutar npm install, para descargar las dependencias
 
