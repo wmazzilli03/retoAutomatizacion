@@ -9,7 +9,7 @@
     "clean:allure": "rimraf allure-results allure-report",
     "test:with-report": "npm run cucumber && npm run report",
     "test:consulta": "npx cucumber-js --config config/cucumber.js --tags \"@consulta\"",
-    "test:validacion": "npx cucumber-js --config config/cucumber.js --tags \"@validacion\"",
+    "test:crearGuia": "npx cucumber-js --config config/cucumber.js --tags \"@crearGuia\"",
     "report:html": "node generateReport.js",
     "report:allure": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report"
   },

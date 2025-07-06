@@ -12,13 +12,13 @@ export class apiGetConsultarGuia{
   } 
 
 async getConsultarGuia(idGuia?:string){ 
-  const url = idGuia ? `${apiConfig.baseUrl}${apiConfig.endpoints.getConsultaGuia}${idGuia}`: `${apiConfig.baseUrl}${apiConfig.endpoints.getConsultaGuia}`;
-  this.response  =  await this.request.get(url, { 
-    });
-    this.responseData = await this.response.json(); 
-    this.JsonResponse = JSON.stringify(this.responseData, null, 2);
-    return this.response; 
+    const url = idGuia ? `${apiConfig.baseUrl}${apiConfig.endpoints.getConsultaGuia}${idGuia}`: `${apiConfig.baseUrl}${apiConfig.endpoints.getConsultaGuia}`;
+      this.response  =  await this.request.get(url)
+      this.responseData = await this.response.json(); 
+      this.JsonResponse = JSON.stringify(this.responseData, null, 2);
+      return this.response; 
   }
+
 
   getResponseData(): any {
     return this.JsonResponse; 

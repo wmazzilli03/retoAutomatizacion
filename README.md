@@ -5,7 +5,7 @@
 
 # ejecucion de los escenarios
 # npx cucumber-js --config config/cucumber.js --tags "@consulta" 
-# npx cucumber-js --config config/cucumber.js --tags "@validacion"
+# npx cucumber-js --config config/cucumber.js --tags "@crearGuia"
 
 
 # abrir reporte con allure 
@@ -16,7 +16,8 @@
 # node generateReport.js 
 
 # o uilizar unos comendos cortos
+# npm run clean:allure
 # npm run test:consulta
-# npm run test:validacion
+# npm run test:crearGuia
 # npm run report:html
 # npm run report:allure 

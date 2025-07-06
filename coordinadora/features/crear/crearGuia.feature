@@ -3,7 +3,7 @@ Feature: Creación de guía con servicio de Recaudo Contra Entrega
   Quiero poder crear una guía con el servicio de "Recaudo Contra Entrega"
   Para que el destinatario pague un valor acordado al momento de la entrega
 
-  @validacion
+  @crearGuia
   Scenario Outline: Crear guía con diferentes combinaciones de datos
     Given que el usuario selecciona el servicio Recaudo Contra Entrega
     And ingresa "<referencia>" como referencia de recaudo

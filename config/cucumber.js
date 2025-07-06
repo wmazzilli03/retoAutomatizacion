@@ -18,7 +18,8 @@ module.exports ={
             resultsDir: 'allure-results'
         },
         require: [
-            "coordinadora/step-definitions/*.ts" 
+            "coordinadora/step-definitions/*.ts",
+            "coordinadora/support/*.ts"
         ],
         requireModule: [
             "ts-node/register"

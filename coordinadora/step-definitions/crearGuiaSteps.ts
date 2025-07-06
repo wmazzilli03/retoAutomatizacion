@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { request, expect, APIRequestContext } from '@playwright/test';
-import {apiPostCrearGuia} from '../apis/apiPostCrearGuia'; 
+import {apiPostCrearGuia} from '../services/apiPostCrearGuia'; 
 
 
 let api: APIRequestContext;
@@ -13,8 +13,8 @@ Given('que el usuario selecciona el servicio Recaudo Contra Entrega', async func
 });
 
 
-Given('ingresa {string} como referencia de recaudo', async function (string) {
-    postGuia.setReferenciaRecaudo(string);
+Given('ingresa {string} como referencia de recaudo', async function (referencia:string) {
+    postGuia.setReferenciaRecaudo(referencia);
 });
 
 
